@@ -1,0 +1,388 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Start the header -->
+<!-- Start the image description -->
+<div class="image_descrption text-uppercase text-center">
+      <img src="../static/image/10.jpeg" class="img-fluid" alt="Responsive image">
+      <div class="child">
+          <h2>restaurant</h2>
+          <h4>menu</h4>
+      </div>
+</div>
+<!-- End the image description -->
+<!-- Start the Our Menu -->
+<div class="our_menu">
+    <div class="container">
+        <div class="head text-center text-uppercase">
+          <i>&lowbar;&lowbar;&lowbar;&lowbar;Discover our popular dishes</i>
+          <h1> our menu</h1>
+        </div>
+        <!-- start the category of menu -->
+        <div class="row">
+            <div class="col-md-12 col-lg text-center text-uppercase our_menu_child active" onclick="OnClickTab(0,1,2)">
+              <h3>starters</h3>
+            </div>
+            <div class="col-md-12 col-lg text-center text-uppercase our_menu_child" onclick="OnClickTab(3,4,5)">
+              <h3>main courses</h3>
+          </div>
+          <div class="col-md-12 col-lg text-center text-uppercase our_menu_child" onclick="OnClickTab(6,7,8)">
+              <h3>desserts</h3>
+          </div>
+          <div class="col-md-12 col-lg text-center text-uppercase our_menu_child" onclick="OnClickTab(9,10,11)">
+              <h3>drinks</h3>
+          </div>
+        </div>
+        <!-- End the category of menu -->
+        <!-- Start the starters -->
+        <div class="row our_menu_category">
+          <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/11.jpeg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">avocado and shrimps <span> 75 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">homemade cocktail dressing</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/12.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">sardine rillettes <span> 45 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">garlic-parsley butter</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row our_menu_category">
+          <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/13.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">marinated salmon<span> 110 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">new potatoes, mayonnaise, carrots, onions</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/14.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">quinoa salad<span> 65 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">cucumber, nuts, sesame, avocado</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row our_menu_category">
+          <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/15.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">king salad<span> 95 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">Green salad, seasonal fruits & vegetables, citrus dressing</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/16.jpeg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">serrano ham platter<span> 85 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">pork</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- End the starters -->
+        <!-- Start the Main courses -->
+          <div class="row our_menu_category">
+          <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/17.jpeg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">grilled rib steak<span> 165 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">homemade england fries, béarnaise sauce</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/18.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">Chicken Lemon-Comfit Tajine <span> 125 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">homemade england fries</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row our_menu_category">
+          <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/19.jpeg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">Duck Breast<span> 170 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">orange sauce mashed potatoes</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/20.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">calf's liver<span> 165 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">Parsley butter, salt & pepper, garlic, mashed potatoes</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row our_menu_category">
+          <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/21.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">Grilled Norwegian Salmon<span> 145 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">Stove vegetables, thyme butte</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/22.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">Chiken Cordon Bleu<span> 110 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">pork</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- End the Main Couses -->
+        <!-- Start the Dessert -->
+        <div class="row our_menu_category">
+          <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/23.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">tart of the day <span> 55 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">homemade</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/24.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">rice pudding<span> 45 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">grand-mother’s recipe with organic vanilla from tahiti</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row our_menu_category">
+          <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/25.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">chocolate udge cake<span> 80 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">Gelato Art ® vanilla ice cream scoop (15 min)</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/26.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title"> Ile Flottante<span> 45 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">nougatine, caramel, vanilla custard cream</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row our_menu_category">
+          <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/27.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title"> cheese-cake<span> 85 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">homemade with organic vanilla from tahiti</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/28.jpeg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title"> fruit-cake<span> 65 Dhs</span></h5>
+                    <p class="card-text"><small class="text-muted">homemade with fruits from tahiti</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- End the Dessert -->
+        <!-- Start the Drinks -->
+        <div class="row our_menu_category">
+          <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/29.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">coca-cola <span> 10 Dhs</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/30.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">coca zero<span> 10 Dhs</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row our_menu_category">
+          <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/33.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">fanta<span> 10 Dhs</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/32.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">sprite<span> 10 Dhs</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row our_menu_category">
+          <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/31.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">Schweppes Tonic<span> 10 Dhs</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 col-md-12 col-lg">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                  <img src="../static/image/34.jpg" class="card-img" alt="not found">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-capitalize">
+                    <h5  class="card-title">Red Bull<span> 15 Dhs</span></h5>
+                </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- End the Drinks -->
+    </div>
+</div>
+<!-- End te Our Menu -->
+<!-- Start the pdf menu -->
+<div class="document_menu">
+  <div class="container">
+    <img src="../static/image/35.jpg" class="img-fluid" alt="Responsive image">
+    <div class="document_menu_child">
+      <h2 class="text-capitalize">download all the Menu</h2>
+      <button class="text-uppercase"><a href="../static/files/menu.pdf" download="menu.pdf" target="_blank">download</a></button>
+    </div>
+  </div>
+</div>
+<!-- End the pdf menu -->
+{% endblock %}

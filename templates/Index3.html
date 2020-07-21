@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="gallery-img">
+    <img src="../static/image/36.jpeg" class="img-fluid" alt="Responsive image">
+    <h2 class="text-uppercase">gallery</h2>
+</div>
+<div class="gallery_content">
+    <div class="container">
+        <div class="gallery_content_child text-center">
+            <i>&lowbar;&lowbar;&lowbar;&lowbar;Discover our popular dishes</i>
+            <h1 class="text-uppercase">food gallery</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-5 gallery_content_img">
+                <div class="overlay" onclick="popupClick(0)">
+                    <i class="fas fa-search-plus fa-2x"></i>
+                </div>
+                <img src="../static/image/15.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-lg-4 gallery_content_img">
+                <div class="overlay" onclick="popupClick(1)">
+                    <i class="fas fa-search-plus fa-2x"></i>
+                </div>
+                <img src="../static/image/12.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-lg-3">
+                <div class="gallery_description text-capitalize text-center">
+                    <h4>menu</h4>
+                    <p>our most beautiful culinary masterpieces</p>
+                </div>
+                <div class="img_div">
+                    <div class="overlay" onclick="popupClick(2)">
+                        <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                    <img src="../static/image/13.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg">
+                <div class="overlay" onclick="popupClick(3)">
+                    <i class="fas fa-search-plus fa-2x"></i>
+                </div>
+                <img src="../static/image/18.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-lg">
+                <div class="overlay" onclick="popupClick(4)">
+                    <i class="fas fa-search-plus fa-2x"></i>
+                </div>
+                <img src="../static/image/21.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg">
+                <div class="img_div">
+                    <div class="overlay" onclick="popupClick(5)">
+                        <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                    <img src="../static/image/23.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="img_div">
+                    <div class="overlay" onclick="popupClick(6)">
+                        <i class="fas fa-search-plus fa-2x"></i>
+                    </div>
+                    <img src="../static/image/25.jpg" class="img-fluid" alt="Responsive image">
+                </div>  
+            </div>
+            <div class="col-lg">
+                <div class="gallery_information text-capitalize text-center">
+                    <div class="gallery_information_child">
+                        <h4>menu</h4>
+                        <p>discover the best of england cuisine</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg gallery_content_img">
+                <div class="overlay" onclick="popupClick(7)">
+                    <i class="fas fa-search-plus fa-2x"></i>
+                </div>
+                <img src="../static/image/24.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

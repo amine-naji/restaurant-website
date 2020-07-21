@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{pagetitle}}</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/Style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,600&display=swap">
+</head>
+<body>
+    <!-- Start the header -->
+    <!-- Start the navbar part -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="{{url_for('home')}}"><img src="../static/image/logo.png" alt="Not Found"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link d-lg-none" href="{{url_for('home')}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('menu')}}" >Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('order')}}">Order Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('gallery')}}">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#" id="reservation">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End the navbar part -->
+    <div class="reservation">
+        <div class="container">
+            <div class="reservation_head text-uppercase text-center">
+                <span class="close">&times;</span>
+                <h1>table reservation</h1>
+                <h4>please enter your information</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-6 box">
+                    <input type="text" placeholder="your name*" title=" Enter Your Name ">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="col-md-6 box">
+                        <input type="email" id="email" placeholder="email address*" title=" Enter Your e-mail">
+                        <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="col-md-6 box">
+                    <input type="text" placeholder="phone*" maxlength="10" pattern="[0-9]" title=" Enter Your Phone Number">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="col-md-6">
+                    <select name="persons" class="text-capitalize">
+                        <option value="persons">persons</option>
+                        <option value="1">1person</option>
+                        <option value="2">2people</option>
+                        <option value="3">3people</option>
+                        <option value="4">4people</option>
+                        <option value="5">5people</option>
+                        <option value="banquet">banquet</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <input type="date" id="date">
+                </div>
+                <div class="col-md-6">
+                    <select name="time">
+                        <option value="time">Time</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:45">20:45</option>
+                        <option value="21:30">21:30</option>
+                        <option value="22:00">22:00</option>
+                        <option value="22:30">22:30</option>
+                        <option value="23:00">23:00</option>
+                        <option value="23:30">23:30</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <textarea name="message" id="textarea_reservation" rows="5" placeholder="your message"></textarea>
+                </div>
+                <div class="col-md-12">
+                    <button id="reserve_btn">reserve table</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End the reservation -->
+    {% block content %}
+
+    {% endblock %}
+     <!-- Start the newsletter -->
+     <div class="news_letter">
+        <div class="container">
+            <h5>Subscribe to the Newsletter</h5>
+            <input type="email"  placeholder="e-mail@example.com">
+            <button id="news_btn">subscribe</button> 
+        </div>
+    </div>
+    <!-- End the newsletter -->
+    <!-- Start the footer -->
+    <footer>
+        <div class="container">
+            <div class="row footer_Child">
+                <div class="col-lg-4">
+                    <h5 class="text-uppercase">king food restaurant</h5>
+                    <p>
+                        2 Front de Mer Secteur Touristique، Agadir 80000
+                        Horaires : 
+                        Open ⋅ Closes at 02:00                   
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-uppercase">reservation :</h5>
+                    <p>+212 (0) 5 28 73 72 11</p>
+                    <h5 class="text-uppercase">delivery or to go:</h5>
+                    <p>+212 (0) 5 28 75 22 35</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-uppercase">time table :</h5>
+                    <p>12 PM - 12 AM</p>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="copy_right">
+                <p> &copy; A.Cheikh &amp; A.Naji <span>2020</span></p> 
+              </div>
+        </div>   
+    </footer>
+    <!-- End the footer -->
+<script src="../static/js/jquery-3.4.1.js"></script>
+<script src="../static/js/popper.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/8e21f64b95.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../static/js/main.js"></script>
+</body>
+</html>

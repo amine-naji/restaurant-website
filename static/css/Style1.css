@@ -1,0 +1,315 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* Start the Header */
+header{
+    width: 100%;
+    height: 100vh;
+}
+.row{
+    margin: 0;
+}
+.Child1{
+    padding-left: 0;
+}
+.part1{
+    background-image: url("../image/02.jpg");
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+.part2{
+    background-image: url("../image/03.jpeg");
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+}
+.part3{
+    background-image: url("../image/01.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link{
+    color:#ffff;
+    font-weight: bold;
+    margin-left: 50px;
+}
+.navbar-light .navbar-nav .nav-link:hover,.active{
+    color: #FFC433 !important;
+    transition: .6s;
+}
+.navbar-expand-lg .navbar-collapse{
+    margin-left: 20%;
+}
+.offre{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 25px;
+    background: #000;
+    opacity: .7;
+    padding: 15px;
+}
+.offre hr{
+    width: 15%;
+    margin-left: 0;
+    border: 2px solid #FFC433;
+}
+.offre span{
+    color: #FFC433;
+}
+/* End the Header */
+/* Start the about_us */
+.about_us{
+    margin-top: 50px;
+    background-image: url("../image/bg-restaurant.jpg");
+    width: 100%;
+    padding: 30px;
+    background-size: cover;
+}
+.about_us h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #FFC433;
+}
+.about_us h3{
+    text-transform: uppercase;
+    font-weight: 550;
+}
+.about_us p{
+    text-align: justify;
+    margin-right: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.about_us span{
+    font-weight: 550;
+}
+/* End the about_us */
+/* Start the delivery */
+.our_customers_love{
+    position: relative;
+}
+.delivery{
+    padding: 50px;
+}
+.delivery h1{
+    font-weight: 600;
+    color: #FFC433;
+}
+.delivery h3{
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+.delivery h1,.delivery h3{
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0;
+}
+.our_customers_love h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    color: #ffff;
+    opacity: 0;
+}
+.our_customers_love:hover h4,.overlay:hover{
+    transition: all .7s ease-in-out;
+}
+.overlay:hover{
+    opacity: .6;
+    cursor: pointer;
+}
+.our_customers_love:hover h4{
+    opacity: 1;
+    cursor: pointer;
+}
+.information h5{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.information h6{
+    font-weight: 550;
+    font-size: 18px;
+    color: #FFC433;
+}
+.information button{
+    background-color: #FFC433;
+    border: 1px solid #FFC433;
+    border-radius: 30px;
+    padding: 5px 10px;
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+.svg-inline--fa{
+    color: #000;
+}
+/* End the delivery */
+/* Start the opinion */
+.opinion {
+    padding: 30px;
+}
+.opinion img{
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    opacity: .8;
+}
+.opinion .child-1{
+    position: relative;
+}
+.opinion h3{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    color: #ffff;
+}
+/* End the opinion */
+/* Start the news_letter */
+.news_letter{
+    padding: 50px;
+    background-color: #eeeeee;
+}
+.news_letter h5{
+    margin-right: 25px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.news_letter input{
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid #000 ;
+    outline: none;
+    background-color: #eeeeee;
+}
+.news_letter button{
+    padding:5px 10px;
+    background-color: #FFC433;
+    border: 1px solid #FFC433;
+    margin-left: 20px;
+    outline: none;
+    color: #000;
+    font-weight: 550;
+    border-radius: 20px;
+    font-size: 18px;
+}
+/* End the news_letter */
+/* Start the footer */
+footer{
+    padding: 50px 0;
+}
+.footer_Child{
+    text-align: center;
+}
+.footer_Child h5{
+    font-weight: 550;
+}
+.footer_Child i{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.copy_right{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 900;
+}
+.copy_right span{
+    color: #FFC433;
+    font-size: 20px;
+}
+/* End the footer */
+/* Start the media Query */
+/*Small devices (landscape phones, 576px and up) */
+@media (max-width: 991px) {
+    .part1,.part2{
+        display: none;
+    }
+    .part3{
+        height: 100vh;
+    }
+    .navbar-light .navbar-toggler{
+        background-color: #ffff;
+        outline: none;
+        margin-left: 85%;
+        margin-top: 5%;
+    }
+    .offre{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 50%;
+        color: #ffff;
+        font-weight: bold;
+        font-size: 16px;
+        background: #000;
+        opacity: .7;
+        padding: 15px;
+    }
+    .about_us_child{
+        text-align: center;
+    }
+    .information{
+        margin-bottom: 25px;
+    }
+    .news_letter input{
+        width: 40%;
+    }
+    .news_letter h5 {
+        font-size: 15px;
+    }
+    .news_letter button{
+        text-align: center;
+        margin-top: 15px;
+    }
+ }
+@media (max-width: 1200px)  { 
+    .offre{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 50%;
+        color: #ffff;
+        font-weight: bold;
+        font-size: 16px;
+        background: #000;
+        opacity: .7;
+        padding: 15px;
+    }
+    .navbar-expand-lg .navbar-collapse{
+        margin: 0;
+    }
+    .about_us_child{
+        margin-top: 14%;
+    }
+    .information h5{
+        font-size: 16px;
+    }
+    .news_letter input{
+        width: 50%;
+    }
+ }
+ /* End the media Qurey */

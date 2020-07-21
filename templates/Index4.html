@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="contact">
+    <div class="contact-img">
+        <img src="../static/image/38.jpeg" class="img-fluid" alt="Responsive image">
+        <div class="contact-child">
+            <h1 class="text-center text-uppercase">contact</h1>
+        </div>
+    </div>
+    <div class="contact-information">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../static/image/39.jpeg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-md-5 contact-information-child">
+                    <h3 class="text-capitalize">the king restaurant</h3>
+                    <p>2 Front de Mer Secteur Touristique، Agadir</p>
+                    <h3 class="text-capitalize">reservation</h3>
+                    <p>+212 (0) 5 28 73 72 11</p>
+                    <h3 class="text-capitalize">delivery or to go</h3>
+                    <p>+212 (0) 5 28 75 22 35</p>
+                    <h3 class="text-capitalize">time table</h3>
+                    <p>12 PM - 12 AM</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="text-center text-capitalize contact-btn"><a href="https://goo.gl/maps/c1ghGKWJooCrezD26" target="_blank">see on google maps</a></button>
+                </div>
+            </div>
+            <div class="contact_form">
+                <h1 class="text-uppercase">fill our form</h1><hr>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text"  placeholder="last name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text"  placeholder="first name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" placeholder="e-mail address">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text"  placeholder="phone" maxlength="10">
+                        </div>
+                        <div class="col-md-12">
+                            <textarea id="textarea_btn" rows="5" placeholder="message"></textarea>
+                        </div>
+                    </div>
+                </form>
+                <button id="send_btn">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
